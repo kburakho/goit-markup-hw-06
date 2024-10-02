@@ -55,16 +55,16 @@ a {
 /*============COMMON STYLES============*/
 
 .container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 318px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 766px;
     }
 }
 
@@ -203,6 +203,7 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
+
     .header-logo {
         margin-right: 76px;
     }
@@ -219,4 +220,148 @@ a {
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
+
+    .contacts {
+        margin-left: auto;
+    }
+
+    .contacts-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .nav-list {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
 }
+
+/* ============== HERO STYLES ============*/
+
+/* ============== /HERO SECTION STYLES ============*/
+
+/* ============== APPROACH STYLES ============*/
+
+.approach.section-padding {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.approach-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+}
+
+.approach-list-title {
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+.approach-list-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.approach-list-item-icon {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .approach-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .approach-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .approach-list-title {
+        text-align: left;
+    }
+
+
+}
+
+@media screen and (min-width: 1158px) {
+
+    .approach.section-padding {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .approach-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .approach-list-item-icon {
+        display: flex;
+        height: 112px;
+        background-color: #f4f4fd;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============== /APPROACH STYLES ============*/
+
+/* ============== REVIEW STYLES ============*/
+
+/* ============== /REVIEW STYLES ============*/
+
+/* ============== PORTFOLIO STYLES ============*/
+
+/* ============== /PORTFOLIO STYLES ============*/
+
+/* ============== FOOTER STYLES ============*/
+
+/* ============== /FOOTER STYLES ============*/
+
+/* ============== MODAL WINDOW STYLES =======*/
+
+/* ============== /MODAL WINDOW STYLES =======*/
