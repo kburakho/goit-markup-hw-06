@@ -241,6 +241,178 @@ a {
     }
 }
 
+/* ============= MOBILE MENU =============*/
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.mobile-menu-container {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.mobile-menu-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 0;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    line-height: 0;
+    fill: #2e2f42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.mobile-menu-nav {
+    margin-bottom: auto;
+}
+
+.mobile-menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 168px;
+}
+
+.mobile-menu-nav-list-item-link-studio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+}
+
+.mobile-menu-nav-list-item-link-portfolio {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mobile-menu-nav-list-item-link-contacts {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mobile-menu-adress-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-bottom: 48px;
+}
+
+.mobile-menu-adress-list-item-link-tel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+
+}
+
+.mobile-menu-adress-list-item-link-email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-nav-list-item-link-portfolio:hover,
+.mobile-menu-nav-list-item-link-portfolio:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+}
+
+.mobile-menu-nav-list-item-link-contacts:hover,
+.mobile-menu-nav-list-item-link-contacts:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+}
+
+.mobile-menu-adress-list-item-link-email:hover,
+.mobile-menu-adress-list-item-link-email:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #404bbf;
+}
+
+
+.mobile-menu-social-links-list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.mobile-menu-social-links-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #4d5ae5;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-social-links-link:hover,
+.mobile-menu-social-links-link:focus {
+    background-color: #404bbf;
+}
+
+
+
+
+
+
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+/* ============= /MOBILE MENU ============*/
+
+
+
+
 /* ============== HERO STYLES ============*/
 
 .hero-section {
@@ -521,12 +693,21 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .review-section {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
     .review-list {
         flex-direction: row;
-        justify-content: center;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 64px;
+    }
+
+    .review-list-item {
+        margin-bottom: 0;
+        width: calc((100% - 24px) / 2);
     }
 
 }
@@ -694,7 +875,8 @@ a {
 
 .container.footer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 96px 16px 72px;
 }
@@ -856,6 +1038,7 @@ a {
     margin-left: 16px;
 }
 
+@media screen and (min-width: 768px) {}
 
 
 
