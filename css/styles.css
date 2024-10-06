@@ -466,7 +466,6 @@ a {
     background: #404bbf;
 }
 
-
 @media screen and (max-width: 767px) and (min-resolution: 192dpi) {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile@2x.jpg);
@@ -626,14 +625,13 @@ a {
 .review-list {
     display: flex;
     flex-direction: column;
+    row-gap: 72px;
 }
 
 .review-list-item {
     width: 264px;
     border-radius: 0 0 4px 4px;
     padding: 0px 0px 32px 0px;
-    margin-bottom: 72px;
-    width: 264px;
     height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -698,23 +696,13 @@ a {
 
 @media screen and (min-width: 768px) {
 
-    .review-section {
-        padding-left: 108px;
-        padding-right: 108px;
-    }
-
     .review-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         column-gap: 24px;
         row-gap: 64px;
     }
-
-    .review-list-item {
-        margin-bottom: 0;
-        width: calc((100% - 24px) / 2);
-    }
-
 }
 
 @media screen and (min-width: 1158px) {
@@ -885,7 +873,10 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    row-gap: 72px;
     padding: 96px 16px 72px;
+
+
 }
 
 .logo-footer {
@@ -894,8 +885,14 @@ a {
     text-align: center;
 }
 
-.footer-logo .logo-part {
+.logo-footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-logo .logo-part {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
@@ -919,7 +916,7 @@ a {
     justify-content: center;
     align-items: center;
     width: 208px;
-    padding: 72px;
+
 
 }
 
@@ -1043,4 +1040,41 @@ a {
 
 .page-footer-subscribe-btn-icon {
     margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container.footer {
+        flex-direction: row;
+        justify-content: left;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        padding-top: 96px;
+        padding-right: 164px;
+        padding-bottom: 96px;
+        padding-left: 108px;
+
+    }
+
+    .logo-footer {
+        text-align: left;
+        width: 285px;
+        padding-right: 24px;
+    }
+
+    .icons-footer {
+        align-items: flex-start;
+    }
+
+    .page-footer-subscribe {
+        width: 453px;
+        align-items: flex-start;
+    }
+
+    .page-footer-subscribe-form {
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 24px;
+    }
 }
