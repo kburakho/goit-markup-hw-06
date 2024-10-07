@@ -864,7 +864,7 @@ a {
 
 /*/footer*/
 
-.footer {
+.page-footer {
     background: #2e2f42;
 }
 
@@ -875,8 +875,6 @@ a {
     align-items: center;
     row-gap: 72px;
     padding: 96px 16px 72px;
-
-
 }
 
 .logo-footer {
@@ -916,8 +914,6 @@ a {
     justify-content: center;
     align-items: center;
     width: 208px;
-
-
 }
 
 .icons-footer-title {
@@ -986,12 +982,11 @@ a {
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    width: 264;
+    width: 288px;
     height: 40px;
     outline: none;
     border: 1px solid #ffffff;
     border-radius: 4px;
-    width: 288px;
     height: 40px;
     background-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1049,12 +1044,10 @@ a {
         justify-content: left;
         align-items: flex-start;
         flex-wrap: wrap;
-        row-gap: 72px;
         padding-top: 96px;
-        padding-right: 164px;
+        padding-right: 148px;
         padding-bottom: 96px;
-        padding-left: 108px;
-
+        padding-left: 92px;
     }
 
     .logo-footer {
@@ -1072,9 +1065,33 @@ a {
         align-items: flex-start;
     }
 
+    .page-footer-subscribe-form-input {
+        width: 264px;
+    }
+
     .page-footer-subscribe-form {
         flex-direction: row;
         align-items: flex-start;
         column-gap: 24px;
     }
+}
+
+@media screen and (min-width: 1158px) {
+
+    .container.footer {
+        align-items: baseline;
+        padding: 100px 15px;
+    }
+
+    .logo-footer {
+        padding-right: 0;
+        margin-right: 120px;
+        width: 264px;
+    }
+
+    .icons-footer {
+        margin-right: 80px;
+    }
+
+
 }
