@@ -1041,7 +1041,8 @@ a {
 @media screen and (min-width: 768px) {
 
     .page-footer {
-        padding-top: 96px;
+        padding-left: 108px;
+        padding-bottom: 96px;
     }
 
     .container.footer {
@@ -1080,6 +1081,7 @@ a {
 @media screen and (min-width: 1158px) {
 
     .page-footer {
+        padding-left: 0;
         padding-top: 100px;
         padding-bottom: 100;
     }
@@ -1100,7 +1102,7 @@ a {
     }
 }
 
-/*modal window*/
+/*modal windows*/
 
 .modal-backdrop {
     position: fixed;
@@ -1344,3 +1346,5 @@ a {
     }
 
 }
+
+/*/modal windows*/
