@@ -1042,7 +1042,7 @@ a {
 
     .page-footer {
         padding-top: 96px;
-        padding-left: 92px;
+
     }
 
     .container.footer {
@@ -1050,7 +1050,6 @@ a {
         justify-content: left;
         align-items: flex-start;
         flex-wrap: wrap;
-
     }
 
     .logo-footer {
@@ -1083,9 +1082,7 @@ a {
 
     .page-footer {
         padding-top: 100px;
-        padding-right: 15px;
         padding-bottom: 100;
-        padding-left: 15px;
     }
 
     .container.footer {
