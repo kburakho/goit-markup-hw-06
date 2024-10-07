@@ -409,10 +409,6 @@ body {
   color: #f4f4fd;
 }
 
-.footer {
-  display: flex;
-}
-
 .icons-footer {
   align-items: baseline;
 }

@@ -866,6 +866,8 @@ a {
 
 .page-footer {
     background: #2e2f42;
+    padding-top: 96px;
+    padding-bottom: 72px;
 }
 
 .container.footer {
@@ -874,7 +876,7 @@ a {
     justify-content: center;
     align-items: center;
     row-gap: 72px;
-    padding: 96px 16px 72px;
+
 }
 
 .logo-footer {
@@ -917,7 +919,6 @@ a {
 }
 
 .icons-footer-title {
-    width: 96px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1039,15 +1040,17 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .page-footer {
+        padding-top: 96px;
+        padding-left: 92px;
+    }
+
     .container.footer {
         flex-direction: row;
         justify-content: left;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding-top: 96px;
-        padding-right: 148px;
-        padding-bottom: 96px;
-        padding-left: 92px;
+
     }
 
     .logo-footer {
@@ -1078,9 +1081,16 @@ a {
 
 @media screen and (min-width: 1158px) {
 
+    .page-footer {
+        padding-top: 100px;
+        padding-right: 15px;
+        padding-bottom: 100;
+        padding-left: 15px;
+    }
+
     .container.footer {
         align-items: baseline;
-        padding: 100px 15px;
+        row-gap: 0;
     }
 
     .logo-footer {
