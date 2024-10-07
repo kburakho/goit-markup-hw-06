@@ -1042,7 +1042,6 @@ a {
 
     .page-footer {
         padding-top: 96px;
-
     }
 
     .container.footer {
@@ -1097,7 +1096,7 @@ a {
     }
 
     .icons-footer {
-        margin-right: 80px;
+        margin-right: auto;
     }
 
 
