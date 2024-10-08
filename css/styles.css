@@ -1285,9 +1285,10 @@ a {
 .review-form-input:focus {
     outline: none;
     border-color: #4d5ae5;
+
 }
 
-.review-form-input-icon:focus {
+.review-form-input:focus+.review-form-input-icon {
     fill: #4d5ae5;
 }
 
@@ -1416,7 +1417,6 @@ a {
     .person {
         fill: #4d5ae5;
     }
-
 }
 
 /*/modal windows*/
