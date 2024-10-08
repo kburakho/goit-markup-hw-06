@@ -64,7 +64,7 @@ a {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 766px;
+        max-width: 767px;
     }
 }
 
@@ -83,6 +83,7 @@ a {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
 }
 
 .header-container {
@@ -521,6 +522,10 @@ a {
 /*approach*/
 
 .approach {
+    max-width: 288px;
+    min-height: 696px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 96px;
     padding-bottom: 96px;
 }
@@ -560,6 +565,11 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .approach {
+        max-width: 736px;
+        min-height: 312px;
+    }
+
     .approach-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -576,6 +586,11 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .approach {
+        max-width: 1128px;
+        min-height: 224px;
+    }
 
     .approach.section-padding {
         padding-top: 120px;
@@ -603,6 +618,10 @@ a {
 /*review*/
 
 .review-section {
+    max-width: 320px;
+    min-height: 2232px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -612,7 +631,6 @@ a {
 .review-title {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 96px;
     padding-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
@@ -626,6 +644,7 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 72px;
+    align-items: center;
 }
 
 .review-list-item {
@@ -635,10 +654,6 @@ a {
     height: 428px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
-}
-
-.review-list-item.last {
-    padding-bottom: 96px;
 }
 
 .review-list-card {
@@ -696,6 +711,11 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .review-section {
+        max-width: 768px;
+        min-height: 1224px;
+    }
+
     .review-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -708,9 +728,16 @@ a {
 @media screen and (min-width: 1158px) {
 
     .review-section {
+        max-width: 1440px;
+        min-height: 780px;
+    }
+
+    .review-section {
         display: block;
-        padding-top: 240px;
-        padding-bottom: 240px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .review-list {
@@ -728,7 +755,12 @@ a {
 /*portfolio*/
 
 .portfolio-section {
+    max-width: 288px;
+    min-height: 2752px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+    text-align: center;
     padding-top: 96px;
     padding-bottom: 96px;
     background: #fff;
@@ -757,6 +789,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: left;
 }
 
 .portfolio-list-text {
@@ -764,6 +797,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    text-align: left;
 }
 
 .portfolio-list-item {
@@ -811,6 +845,11 @@ a {
 
 @media screen and (min-width: 768px) {
 
+    .portfolio-section {
+        max-width: 736px;
+        min-height: 1516px;
+    }
+
     .portfolio-list {
         display: flex;
         flex-wrap: wrap;
@@ -832,6 +871,12 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .portfolio-section {
+        max-width: 1128px;
+        min-height: 1000px;
+    }
+
     .portfolio-list {
         display: flex;
         flex-wrap: wrap;
@@ -865,9 +910,13 @@ a {
 /*/footer*/
 
 .page-footer {
+    max-width: 320px;
+    min-height: 664px;
+    margin-left: auto;
+    margin-right: auto;
     background: #2e2f42;
     padding-top: 96px;
-    padding-bottom: 72px;
+    padding-bottom: 96px;
 }
 
 .container.footer {
@@ -1041,8 +1090,10 @@ a {
 @media screen and (min-width: 768px) {
 
     .page-footer {
+        max-width: 768px;
+        min-height: 456px;
         padding-left: 108px;
-        padding-bottom: 96px;
+        padding-right: 108px;
     }
 
     .container.footer {
@@ -1081,14 +1132,21 @@ a {
 @media screen and (min-width: 1158px) {
 
     .page-footer {
-        padding-left: 0;
+        max-width: 1440px;
+        min-height: 312px;
         padding-top: 100px;
-        padding-bottom: 100;
+        padding-bottom: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .container.footer {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .container.footer {
         align-items: baseline;
-        row-gap: 0;
     }
 
     .logo-footer {
@@ -1329,7 +1387,7 @@ a {
     background: #404bbf;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-width: 1158px) {
 
     .modal {
         padding: 72px 24px 16px 24px;
