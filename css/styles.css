@@ -243,6 +243,7 @@ a {
 }
 
 /*mobile menu*/
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -265,7 +266,9 @@ a {
 
 }
 
-.mobile-menu-container {
+.container.mobile-menu-container {
+    width: 320px;
+    height: 100%;
     position: relative;
     padding-top: 72px;
     padding-bottom: 24px;
@@ -275,18 +278,22 @@ a {
 }
 
 .mobile-menu-close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    padding: 0;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-width: 1px;
-    border-radius: 50%;
+    fill: #e7e9fc;
+    stroke-width: 1px;
+    stroke: #2e2f42;
+    padding: 0;
+
     background-color: #e7e9fc;
     line-height: 0;
     fill: #2e2f42;
@@ -312,6 +319,7 @@ a {
     row-gap: 40px;
     margin-bottom: 168px;
 }
+
 
 .mobile-menu-nav-list-item-link-studio {
     font-weight: 700;
@@ -1256,26 +1264,13 @@ a {
     width: 100%;
     height: 40px;
     background-color: transparent;
-    padding-left: 38px;
+    padding-left: 34px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #2e2f42;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.review-form-input:focus+.review-form-input-icon {
-    fill: #4d5ae5;
-}
-
-.review-form-input:focus {
-    outline: none;
-    border-color: #4d5ae5;
-}
-
-.review-form-input-wrapper {
-    position: relative;
 }
 
 .review-form-input-icon {
@@ -1285,6 +1280,19 @@ a {
     transform: translateY(-50%);
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-input:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.review-form-input-icon:focus {
+    fill: #4d5ae5;
+}
+
+.review-form-input-wrapper {
+    position: relative;
 }
 
 .review-form-field-wrapper-comment {
@@ -1358,8 +1366,6 @@ a {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-
-
 }
 
 .review-form-submit-button {
@@ -1399,8 +1405,16 @@ a {
         margin-right: 8px;
     }
 
-    .review-form-policy-link {
-        margin-left: 0;
+}
+
+@media screen and (min-width: 1158px) {
+
+    .review-form-input {
+        padding-left: 38px;
+    }
+
+    .person {
+        fill: #4d5ae5;
     }
 
 }
